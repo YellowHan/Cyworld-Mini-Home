@@ -1,2 +1,0 @@
-
-Cyworld-Mini-Home
