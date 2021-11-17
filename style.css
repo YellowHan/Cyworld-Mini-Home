@@ -16,7 +16,7 @@ body {margin: 0px;width: 1280px;height: 800px;background-color: rgb(172, 172, 17
 #right_side_bar {width: 180px; height: 200px;;float: left;margin-top: 50px;border-radius: 10px;display: flex;flex-direction: column;}
 .menu_bar {display: flex; flex: 0.2;border: solid; border-width: 1px;margin-top: 0px;margin-bottom: 10px;}
 #cy_home_butten {display: flex;flex: 0.15;background-color: rgb(139, 128, 121);color: rgb(214, 214, 214);border-radius: 3px;justify-content: center;}
-.right20 {padding-right: 20px;align-items: center;}
+.right20 {padding-right: 15px;position: relative;bottom: 6px;}
 p{margin: 0px;}
 #state {display: flex;flex-direction: row;flex: 0.4;font-size: 12px;position: relative;top: 5px;border-radius: 3px;padding-top: 5px; padding-left: 8px;background-color: #fff;}
 .state_name {flex: 0.5;font-size: 12px;}
