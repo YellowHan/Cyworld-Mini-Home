@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+.gamja_flower {font-family: 'Dongle', sans-serif;}
 body {margin: 0px;width: 1280px;height: 800px;background-color: rgb(172, 172, 172);background-image: url('/img/pattern.png');background-repeat: repeat;background-size: 100px;}
 .bookcover {background-color: rgb(255, 244, 144);width: 940px;height: 544px;border-radius: 10px;border-style: solid;border-width: 1px;margin-top: 50px;margin-left: 50px;}
 .bookdot {border-style: dashed;border-radius: 10px;border-color: rgb(0, 0, 0);border-width: 1px;margin: 15px;}
@@ -5,29 +7,56 @@ body {margin: 0px;width: 1280px;height: 800px;background-color: rgb(172, 172, 17
 #section {width: 1000px;height: 800px;float: left;margin-right: 60px;}
 #left_border {display: flex;flex: 0.6; flex-direction: column;}
 #main_border {display: flex;flex: 2;flex-direction: column;}
-#count_day {display: flex;flex: 0.2;font-size: 12px;align-items: flex-end; justify-content: center;}
+#count_day {display: flex;flex: 0.2;font-size: 1px;align-items: flex-end; justify-content: center;}
 #profile {flex: 2;}
 .red_span {color: red;font-weight: 700;}
-#left_in_bar {flex: 2; background-color: rgb(255, 255, 255);border: solid; border-width: 1px; border-color: rgb(160, 160, 160);border-radius: 5px;margin: 10px;}
-#main {display: flex;flex: 1;background-color: rgb(255, 255, 255);border: solid; border-width: 1px; border-color: rgb(160, 160, 160);border-radius: 5px;margin-top: 10px;margin-left: 10px;margin-bottom: 10px;margin-right: 0px;}
+#left_in_bar {flex: 2; background-color: rgb(231, 231, 231);border: solid; border-width: 1px; border-color: rgb(160, 160, 160);border-radius: 5px;margin: 10px;}
+#main {display: flex;flex-direction: column;flex: 1.2;background-color: rgb(255, 255, 255);border: solid; border-width: 1px; border-color: rgb(160, 160, 160);border-radius: 5px;margin-top: 10px;margin-left: 10px;margin-bottom: 10px;margin-right: 0px;}
 #top {display: flex;flex-direction: row;flex: 0.1;}
-.top_title {display: flex;flex-direction: row; flex: 1;font-size: 12px;align-items: flex-end;position: relative;left: 20px;}
+.top_title {display: flex;flex-direction: row; flex: 1;font-size: 12px;font-weight: 700;align-items: flex-end;position: relative;left: 20px;}
 .top_url {display: flex;flex: 1; font-size: 10px;align-items: flex-end;justify-content: right;position: relative;right: 20px;}
-#right_side_bar {width: 180px; height: 200px;;float: left;margin-top: 50px;border-radius: 10px;display: flex;flex-direction: column;}
+#right_side_bar {float: left;margin-top: 50px;border-radius: 10px;display: flex;flex-direction: column;}
 .menu_bar {display: flex; flex: 0.2;border: solid; border-width: 1px;margin-top: 0px;margin-bottom: 10px;}
-#cy_home_butten {display: flex;flex: 0.15;background-color: rgb(139, 128, 121);color: rgb(214, 214, 214);border-radius: 3px;justify-content: center;}
+#cy_home_butten {display: flex;flex: 0.15;background-color: rgb(139, 128, 121);border-radius: 3px;justify-content: center;border-width: 1px;border-color: gray;}
 .right20 {padding-right: 15px;position: relative;bottom: 6px;}
 p{margin: 0px;}
-#state {display: flex;flex-direction: row;flex: 0.4;font-size: 12px;position: relative;top: 5px;border-radius: 3px;padding-top: 5px; padding-left: 8px;background-color: #fff;}
+#state {display: flex;flex-direction: row;flex: 0.4;font-size: 12px;position: relative;top: 5px;border-radius: 3px;padding-top: 5px; padding-left: 8px;padding-bottom: 5px; background-color: #fff;}
 .state_name {flex: 0.5;font-size: 12px;}
 .state_bar {flex: 1;position: relative;bottom: 1px;}
 .meter1>meter::-webkit-meter-optimum-value {background-image: linear-gradient(#2661df 0%,#2661df 100%);}
 .meter2>meter::-webkit-meter-optimum-value {background-image: linear-gradient(#ff4800 0%,#ff4800 100%);}
 .meter3>meter::-webkit-meter-optimum-value {background-image: linear-gradient(#00e200 0%,#00e200 100%);}
-hr {border-style: dotted;border-width: 1px;color: gray;padding-bottom: 5px;}
 .symbol {flex: 0.3;font-size: 12px;background-color: white;padding-left: 8px;padding-right: 8px;align-items: center;}
 .symbol_img {width: 25px;height: 25px;border-radius: 2px;}
 .scrap_favorites {flex: 0.1;font-size: 11px;background-color: white;text-align: center;}
 .use_item {flex: 0.1;background-color: white;font-size: 11px;padding-left: 8px;padding-right: 8px;padding-bottom: 3px;}
 .music {flex: 0.2;background-color: rgb(214, 214, 214);font-size: 11px;padding-top: 3px; padding-left: 8px;padding-right: 8px;padding-bottom: 3px; border-radius: 3px;}
-
+.in_out {display: flex;flex-direction: row;flex: 1;}
+.go_home, .log_out {background-color: rgb(255, 230, 0);border-radius: 5px;border-width: 1px;border-color: gray;}
+#profile {background-color: white;margin: 10px;border-radius: 5px;padding: 10px;}
+.profile_photo {width: 125px;border-width: 1px;border-style: solid;color: rgb(212, 212, 212);border-radius: 5px;}
+.dotted_line {width: 100%;border-bottom: 0px;border-top: 1px;border-style: dotted;align-items: center;color: gray;}
+.today_box {height: 20px; font-size: 10px;border-style: solid;border-width: 1px;border-radius: 3px;border-color: gray;text-align: center;padding-top: 4px;}
+.today_is {color: rgb(0, 112, 156);font-weight: 700;font-size: 10px;}
+.profile_text {justify-items: center;font-size: 11px;height: 100px; margin-top: 10px;margin-bottom: 10px;}
+.history {display: flex;flex-direction: row;text-align: left;font-size: 10px;}
+.history_text{flex: 0.1;}
+.up_down {flex: 1;text-align: right;}
+.info_name {font-size: 12px;font-weight: 700;color: purple;}
+.info_another {font-size: 10px;color: gray;}
+.friend_me {height: 40px;border-style: dotted;border-width: 1px;border-radius: 5px;margin-top: 5px;}
+.strong_text {color: rgb(0, 115, 160);font-weight: 700;font-size: 13px;}
+.font_10 {font-size: 10px;}
+li {font-size: 11px;padding: 2px;}
+#contents {margin: 10px;display: flex;flex-direction: column;}
+#contents_top {display: flex;flex-direction: row;margin-bottom: 30px;}
+.text_box {border-radius: 3px;padding-top: 1px;padding-bottom: 1px;padding-left: 3px;padding-right: 3px;color: white;}
+#news {flex: 1;}
+ul {list-style-type: none;padding-left: 0px;margin-top: 3px;}
+.hr_margin {margin-top: 3px;margin-bottom: 0px;}
+#table_set {flex: 0.7;padding-top: 15px;padding-right: 0px;}
+table, td {border-style: solid;border-width: 1px;border-collapse: collapse;border-color: gray;padding: 3px;margin: 5px;color: blue;font-size: 12px;}
+.width_100 {width: 100%;}
+.color_coral {background-color: coral;}
+.color_blue {background-color: rgb(51, 163, 255);}
+#miniroom {height: 230px;border-style: dotted;border-width: 1px;border-radius: 5px;margin-top: 5px;margin-bottom: 5px;}
