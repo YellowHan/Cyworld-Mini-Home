@@ -1,13 +1,11 @@
 body {
     margin: 0px;
-    background-color: rgb(172, 172, 172);
     background-image: url('./img/YellowPinkmin.png');
 }
 
 p {
     margin: 0px;
 }
-
 
 #section {
     float: left;
