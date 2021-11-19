@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     background-color: rgb(172, 172, 172);
-    background-image: url('/img/YellowPinkmin.png');
+    background-image: url('./img/YellowPinkmin.png');
 }
 
 p {
