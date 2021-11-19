@@ -5,70 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=1280, initial-scale=1.0">
     <title>Yellow World</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./layout.css" />
+    <link rel="stylesheet" href="./home.css" />
   </head>
   <body>
     <section id="section">
-      <div class="bookcover">
-        <div class="bookdot">
-          <div class="page">
+      <div id="bookcover">
+        <div id="bookdot">
+          <div id="page">
             <div id="left_border">
               <div id="count_day">
-                <span class="top_day">TODAY <span class="red_span">33</span> | TOTAL 333</span>
+                <span>TODAY <span class="red_span">33</span> | TOTAL 333</span>
               </div>
                 <div id="left_in_bar">
                   <div id="profile">
-                    <img class="profile_photo" src="./img/YellowHan.jpg"/>
+                    <img id="profile_photo" src="/img/YellowHan.jpg"/>
                     <hr class="dotted_line">
-                    <div class="today_box">
-                      <p><span class="today_is">TODAY IS.. </span>Coding Holic :-)</p>
+                    <div id="today_box">
+                      <p><span id="today_is">TODAY IS.. </span>Coding Holic</p>
                     </div>
-                    <div class="profile_text">
+                    <div id="profile_text">
                       <p>일촌구함-!!</p>
                       <p>이촌구함-!!</p>
                       <p>삼촌구함-!!</p>
                     </div>
-                    <div class="history">
-                      <div class="edit_history_text">
+                    <div id="history">
+                      <div id="history_text">
                         <p>▶HISTORY</p>
                       </div>
-                      <div class="up_down">
+                      <div id="up_down">
                         <p>▼ ▲</p>
                       </div>
                     </div>
                     <hr class="dotted_line">
                     <div>
-                      <p class="info_name">YellowHan <span class="info_another">(♀)</span>  </p>
-                      <p class="info_another">hellou8363@gmail.com</p>
+                      <p id="info_name">YellowHan <span class="info_another">(♀)</span>  </p>
+                      <p id="info_another">hellou8363@gmail.com</p>
                     </div>
-                    <div class="friend_me">
+                    <div id="friend_me">
                       <!--파도타기 추가-->
                     </div>
                   </div>
                   <div></div>
                 </div>
             </div>
+            <div id="between"></div>
             <div id="main_border">
               <div id="top">
-                <span class="top_title font_weight700">YellowHan의 미니홈피&#128515;</span>
-                <span class="top_url">https://yellowhan.github.io/mini_home</span>
+                <span id="top_title">YellowHan의 미니홈피&#128515;</span>
+                <span id="top_url">https://yellowhan.github.io/mini_home</span>
               </div>
               <div id="main">
                 <div id="contents">
                   <div id="contents_top">
                     
                     <div id="news">
-                    <p class="font_10"><span class="strong_text">Updated news</span> TODAY STORY</p>
-                    <hr class="hr_margin">
+                    <p class="font_10"><span class="strong_font">Updated news</span> TODAY STORY</p>
+                    <hr class="hr_set">
                       <ul>
-                        <li class="font_11"><span class="text_box color_coral">사진첩</span> 우리집 귀요미들</li>
-                        <li class="font_11"><span class="text_box color_blue">게시판</span> 코딩은 재밌어</li>
-                        <li class="font_11"><span class="text_box color_coral">사진첩</span> 우리집 햄토토</li>
-                        <li class="font_11"><span class="text_box color_blue">게시판</span> 클린코드 만들고 싶다</li>
+                        <li><span class="text_box color_coral">사진첩</span> 우리집 귀요미들</li>
+                        <li><span class="text_box color_blue">게시판</span> 코딩은 재밌어</li>
+                        <li><span class="text_box color_coral">사진첩</span> 우리집 햄토토</li>
+                        <li><span class="text_box color_blue">게시판</span> 클린코드 만들고 싶다</li>
                       </ul>
                     </div>
                     <div id="table_set">
-                      <table class="width_100">
+                      <table>
                         <tr>
                           <td>다이어리 0/25</td>
                           <td>사진첩 0/25</td>
@@ -81,16 +83,14 @@
                     </div>
                   </div>
                   <div>
-                    <p class="font_10"><span class="strong_text">Mini Room</span> EXPRESS YOURSELF</p>
-                    <hr class="hr_margin">
+                    <p class="font_10"><span class="strong_font">Mini Room</span> EXPRESS YOURSELF</p>
+                    <hr class="hr_set">
                     <div id="miniroom">
-                      <!--미니룸 추가-->
+                      <img id="miniroom_pic" src="/img/miniroom.png">
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="menu_bar">
             </div>
           </div>
         </div>
@@ -98,38 +98,44 @@
     </section>
     <aside id="right_side_bar">
       <input id="cy_home_butten" type="button" value="싸이월드 홈">
-      <div id="state">
-        <div class="state_name">
-          <p>프렌들리</p>
-          <p>액티브</p>
-          <p>페이머스</p>
+      <div id="state_set">
+        <div id="state">
+          <div class="state_name">
+            <p>프렌들리</p>
+            <p>액티브</p>
+            <p>페이머스</p>
+          </div>
+          <div id="state_bar">
+            <p class="meter1"><meter value="50" max="100"></meter></p>
+            <p class="meter2"><meter value="90" max="100"></meter></p>
+            <p class="meter3"><meter value="15" max="100"></meter></p>
+          </div>
         </div>
-        <div class="state_bar">
-          <p class="meter1"><meter value="50" max="100"></meter></p>
-          <p class="meter2"><meter value="90" max="100"></meter></p>
-          <p class="meter3"><meter value="15" max="100"></meter></p>
+        <hr class="dotted_line">
+        <div id="symbol">
+          <div id="symbol_text">
+            마이심볼
+          </div>
+          <div id="symbol_right">
+            <span><img class="symbol_img" src="/img/symbol_1.jpg"/></span>
+            <span><img class="symbol_img" src="/img/symbol_2.jpg"/></span>
+            <span><img class="symbol_img" src="/img/symbol_3.jpg"/></span>
+          </div>
+        </div>
+        <hr class="dotted_line">
+        <div id="scrap_favorites">
+          <span>스크랩 1234 | 즐겨찾기 5678</span>
+        </div>
+        <hr class="dotted_line">
+        <div id="use_item">
+          <p class="font_blue">사용중인 아이템🞂</p>
+          <p>선물함 999 | 소망상자 999</p>
         </div>
       </div>
-      <div class="symbol">
-        <hr class="dotted_line">
-        <span class="right20">마이심볼</span>
-        <span><img class="symbol_img" src="/img/symbol_1.jpg"/></span>
-        <span><img class="symbol_img" src="/img/symbol_2.jpg"/></span>
-        <span><img class="symbol_img" src="/img/symbol_3.jpg"/></span>
-        <hr class="dotted_line">
-      </div>
-      <div class="scrap_favorites">
-        <span>스크랩 1234 | 즐겨찾기 567</span>
-      </div>
-      <div class="use_item">
-        <hr class="dotted_line">
-        <p>사용중인 아이템🞂</p>
-        <p>선물함 999 | 소망상자 999</p>
-      </div>
-      <div class="music">
+      <div id="music">
         <p>&#128191; Coding is My Life ▶ ■ </p>
       </div>
-      <div class="in_out">
+      <div id="in_out">
         <input class="go_home" type="button" value="내 미니홈피 가기">
         <input class="log_out" type="button" value="로그아웃">
       </div>

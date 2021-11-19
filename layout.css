@@ -1,0 +1,302 @@
+body {
+    margin: 0px;
+    background-color: rgb(172, 172, 172);
+    background-image: url('/img/YellowPinkminjpg.jpg');
+}
+
+p {
+    margin: 0px;
+}
+
+
+#section {
+    float: left;
+    width: 900px;
+}
+
+#bookcover {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    margin: 50px;
+}
+
+#bookdot {
+    border-style: dashed;
+    border-radius: 10px;
+    border-color: gray;
+    border-width: 1px;
+    margin: 18px;
+}
+
+#page {
+    background-color: rgb(245, 245, 245);
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    margin: 6px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Profile_bar */
+#left_border {
+    display: flex;
+    flex: 0.7;
+    flex-direction: column;
+}
+
+#count_day {
+    font-size: 11px;
+    text-align: center;
+    margin: 12px 10px 4px 10px;
+}
+
+.red_span {
+    color: red;
+    font-weight: 700;
+}
+
+#left_in_bar {
+    flex: 2;
+    background-color: rgb(231, 231, 231);
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(160, 160, 160);
+    border-radius: 5px;
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#profile_photo {
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 5px;
+}
+
+.dotted_line {
+    width: 100%;
+    border-bottom: 0px;
+    border-top: 2px;
+    border-style: dotted;
+    color: gray;
+}
+
+#today_box {
+    font-size: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: gray;
+    text-align: center;
+}
+
+#today_is {
+    color: rgb(0, 112, 156);
+    font-weight: 700;
+    font-size: 11px;
+}
+
+#profile_text {
+    justify-items: center;
+    font-size: 11px;
+    height: 100px;
+    margin: 10px 0px 10px 0px;
+}
+
+#history {
+    display: flex;
+    font-size: 10px;
+}
+
+#history_text {
+    flex: 1
+}
+
+#up_down {
+    flex: 1;
+    text-align: right;
+}
+
+#info_name {
+    font-size: 12px;
+    font-weight: 700;
+    color: purple;
+}
+
+#info_another {
+    font-size: 10px;
+    color: gray;
+}
+
+#friend_me {
+    height: 20px;
+    border-style: dotted;
+    border-width: 1px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+/* Between */
+#between {margin: 5px;}
+
+/* Main */
+#main_border {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+}
+
+#top {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 7px 1px 7px;
+}
+
+#top_title {
+    flex: 3;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#top_url {
+    flex: 1;
+    font-size: 10px;
+    padding-top: 5px;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(160, 160, 160);
+    border-radius: 5px;
+}
+
+/* State_bar */
+#right_side_bar {
+    float: left;
+    width: 181px;
+    margin-top: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#cy_home_butten {
+    background-color: rgb(139, 128, 121);
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: rgb(87, 75, 68);
+}
+
+#state_set {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    position: relative;
+    top: 6px;
+    padding: 5px 8px 0px 8px;
+    background-color: white;}
+
+#state {
+    display: flex;
+    flex-direction: row;
+}
+
+#state_name {
+    font-size: 12px;
+}
+
+#state_bar {
+    padding-left: 5px;
+}
+
+.meter1>meter::-webkit-meter-optimum-value {
+    background-image: linear-gradient(#2661df 0%,#2661df 100%);
+}
+
+.meter2>meter::-webkit-meter-optimum-value {
+    background-image: linear-gradient(#ff4800 0%,#ff4800 100%);
+}
+
+.meter3>meter::-webkit-meter-optimum-value {
+    background-image: linear-gradient(#00e200 0%,#00e200 100%);
+}
+
+#symbol {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+}
+
+#symbol_text {
+    flex: 0.8;
+    padding-top: 4px;
+}
+
+#symbol_rightt {
+    flex: 0.2;
+}
+
+.symbol_img {
+    width: 25px;
+    border-radius: 2px;
+}
+
+#scrap_favorites {
+    font-size: 11px;
+    text-align: center;
+}
+
+#use_item {
+    font-size: 11px;
+    padding-bottom: 3px;
+}
+
+.font_blue {
+    color: blue;
+}
+
+#music {
+    flex: 0.2;
+    background-color: rgb(214, 214, 214);
+    font-size: 11px;
+    padding: 8px 8px 3px 8px;
+    border-radius: 3px;
+}
+
+#in_out {
+    display: flex;
+    /* flex-direction: row; */
+}
+
+.go_home, .log_out {
+    background-color: rgb(255, 230, 0);
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: gray;
+}
+
+
+
+
+
+
+
+
+
