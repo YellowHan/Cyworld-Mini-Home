@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     background-color: rgb(172, 172, 172);
-    background-image: url('/img/YellowPinkminjpg.jpg');
+    background-image: url('/img/YellowPinkmin.png');
 }
 
 p {
@@ -223,7 +223,7 @@ p {
 }
 
 #state_bar {
-    padding-left: 5px;
+    padding: 0px 6px 0px 10px;
 }
 
 .meter1>meter::-webkit-meter-optimum-value {
@@ -236,6 +236,17 @@ p {
 
 .meter3>meter::-webkit-meter-optimum-value {
     background-image: linear-gradient(#00e200 0%,#00e200 100%);
+}
+
+#up_down_set {
+    display: flex;
+    flex-direction: column;
+}
+
+.up_down {
+    width: 10px;
+    height: 10px;
+    margin: 3px;
 }
 
 #symbol {
@@ -291,12 +302,3 @@ p {
     border-width: 1px;
     border-color: gray;
 }
-
-
-
-
-
-
-
-
-
