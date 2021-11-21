@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    height: 0px;
     background-image: url('./img/YellowPinkmin.png');
 }
 
@@ -29,7 +30,7 @@ p {
 }
 
 #page {
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(212, 212, 212);
     border-style: solid;
     border-radius: 10px;
     border-width: 1px;
@@ -138,14 +139,6 @@ p {
     color: gray;
 }
 
-#friend_me {
-    height: 20px;
-    border-style: dotted;
-    border-width: 1px;
-    border-radius: 5px;
-    margin-top: 5px;
-}
-
 /* Between */
 #between {margin: 5px;}
 
@@ -183,12 +176,13 @@ p {
     border-width: 1px;
     border-color: rgb(160, 160, 160);
     border-radius: 5px;
+    margin-right: 5px;
 }
 
 /* State_bar */
 #right_side_bar {
     float: left;
-    width: 181px;
+    width: 170px;
     margin-top: 50px;
     border-radius: 10px;
     display: flex;
@@ -200,6 +194,7 @@ p {
     border-radius: 3px;
     border-width: 1px;
     border-color: rgb(87, 75, 68);
+    width: 100%;
 }
 
 #state_set {
@@ -286,12 +281,10 @@ p {
     background-color: rgb(214, 214, 214);
     font-size: 11px;
     padding: 8px 8px 3px 8px;
-    border-radius: 3px;
 }
 
 #in_out {
     display: flex;
-    /* flex-direction: row; */
 }
 
 .go_home, .log_out {
@@ -299,4 +292,40 @@ p {
     border-radius: 5px;
     border-width: 1px;
     border-color: gray;
+    padding: 0px 3px 0px 3px;
+}
+
+/* Menu_bar */
+#menu_bar {
+    position: fixed;
+    top: 130px;
+    left: 804px;
+}
+
+.menu {
+    margin: 3px;
+    padding: 8px;
+    text-align: center;
+    border-width: 2px;
+    border-color: gray;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-size: 12px;
+}
+
+.menu_state_click {
+    background-color: white;
+    color: black;
+
+}
+
+.menu_state_defalut {
+    background-color: rgb(0, 133, 185);
+    color: white;
+}
+
+a {text-decoration: none;}
+
+select {
+    width: 100%;
 }
