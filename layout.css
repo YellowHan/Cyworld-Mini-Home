@@ -311,17 +311,14 @@ p {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
     font-size: 12px;
+    color: white;
+    background-color: rgb(0, 133, 185);
 }
 
-.menu_state_click {
+.menu:hover {
     background-color: white;
     color: black;
 
-}
-
-.menu_state_defalut {
-    background-color: rgb(0, 133, 185);
-    color: white;
 }
 
 a {text-decoration: none;}
