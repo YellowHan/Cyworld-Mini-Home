@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
 
 #contents {
-    width: 505px;
+    width: 520px;
     height: 420px;
+    margin: 10px 15px 10px 10px;
+    overflow: auto;
 }
 
 #contents_in {
-    width: 500px;
-    height: 310px;
     padding: 10px 0px 10px 10px;
-    overflow: auto;
 }
 
 .day {
@@ -128,47 +127,53 @@ span {
     border-radius: 5px;
 }
 
-/* calendar */
-.date-box {
-    width: 490px;
-    border: 1px solid #e7e7e7;
+.calendar {
     display: flex;
-    align-items: center;
-    margin: 10px;
-    padding: 5px;
+    flex-direction: row;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
     border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
 }
 
-.today {
-    margin: 5px;
-    text-align: center;
-    color: #3b87ab;
+.main_day {
+    flex: 0.1;
+    color: skyblue;
+    font-size: 12px;
     font-weight: 700;
-}
-
-.date-list {
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.date {
-    color: #707070;
-    cursor: pointer;
     text-align: center;
-    margin: 5px;
+    margin: 2px 10px 2px 10px;
 }
 
-.color-red {
-    color: red;
+.days {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    margin: auto;
 }
 
-.color-blue {
+.numbers {
+    margin: 2px;
+}
+
+.color_blue {
     color: blue;
 }
 
+.color_red {
+    color: red;
+}
 
+.color_white {
+    color: white;
+}
+
+.font_20 {
+    font-size: 20px;
+}
 
 /* secret_css */
 
@@ -180,14 +185,6 @@ span {
 
 .pw_check {
     margin: 5px;
-}
-
-.color_white {
-    color: white;
-}
-
-.font_20 {
-    font-size: 20px;
 }
 
 .back_diary {

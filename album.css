@@ -6,7 +6,7 @@
 }
 
 #contents_in {
-    padding: 5px 10px 5px 5px;
+    padding: 10px;
 }
 
 .info_row {
@@ -16,7 +16,7 @@
 
 .title {
     background-color: rgb(235, 235, 235);
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 700;
     text-align: center;
     border-style: solid none dotted none;
