@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
 
 #contents {
-    width: 520px;
-    height: 420px;
+    width: 500px;
+    height: 400px;
     margin: 10px 15px 10px 10px;
     overflow: auto;
 }
@@ -179,7 +179,7 @@ span {
 /* secret_css */
 
 .center {
-    height: 100%;
+    /* height: 100%; */
     text-align: center;
     margin: 150px;
 }
