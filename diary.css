@@ -73,6 +73,7 @@ span {
     font-size: 11px;
     color: gray;
     margin: 0px;
+    cursor: pointer;
 }
 
 .public_set_dropdown_content {
