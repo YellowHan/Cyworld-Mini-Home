@@ -8,7 +8,7 @@
 #contents_in {
     width: 500px;
     height: 310px;
-    padding: 10px 0px 10px 10px;
+    padding: 10px 0px 4px 10px;
     overflow: auto;
 }
 
@@ -21,10 +21,10 @@
     border-color: gray; 
 }
 
-.date {
+.date_record {
     font-size: 13px;
     font-weight: 700;
-    color: rgb(0, 133, 173);
+    color: rgb(107, 74, 43);
     margin: 10px;
 }
 
@@ -125,7 +125,7 @@ span {
 }
 
 #secret_button:hover {
-    background-color: skyblue;
+    background-color: rgb(107, 74, 43);
     border-radius: 5px;
 }
 
@@ -143,7 +143,7 @@ span {
 .today {
     margin: 5px;
     text-align: center;
-    color: #3b87ab;
+    color: rgb(107, 74, 43);
     font-weight: 700;
 }
 
@@ -159,6 +159,9 @@ span {
     cursor: pointer;
     text-align: center;
     margin: 5px;
+    font-size: 13px;
+    font-weight: 700;
+    color: rgb(107, 74, 43);
 }
 
 .color-red {
@@ -167,37 +170,4 @@ span {
 
 .color-blue {
     color: blue;
-}
-
-
-
-/* secret_css */
-
-.center {
-    height: 100%;
-    text-align: center;
-    margin: 150px;
-}
-
-.pw_check {
-    margin: 5px;
-}
-
-.color_white {
-    color: white;
-}
-
-.font_20 {
-    font-size: 20px;
-}
-
-.back_diary {
-    width: 150px;
-    background-color: skyblue;
-    font-size: 12px;
-    border-style: none;
-    border-radius: 5px;
-    padding: 5px;
-    text-align: center;
-    margin: auto;
 }

@@ -109,7 +109,7 @@
                   </div>
                   <div id="contents_in">
                     <div class="day">
-                      <p class="date">2021.11.10 수</p>
+                      <p class="date_record">2021.11.10 수</p>
                       <p class="text">
                         나는 개똥벌레~ 친구가 없네~<br>
                         하루종일 혼자서 코딩만 하지~<br>
@@ -150,7 +150,7 @@
                       </div>
                     </div>
                     <div class="day">
-                      <p class="date">2021.11.17 화</p>
+                      <p class="date_record">2021.11.17 화</p>
                       <p class="text">
                         모각코 6일차<br>
                         HTML / CSS는 재미있어>_<<br>
@@ -188,7 +188,7 @@
                       </div>
                     </div>
                     <div class="day">
-                      <p class="date">2021.11.24 화</p>
+                      <p class="date_record">2021.11.24 화</p>
                       <p class="text">
                         하루 중 제일 즐거울 때는 언제?_?<br>
                         그건 바로~ 코딩할 때지:-)<br>
@@ -284,9 +284,22 @@
         <p>&#128191; Coding is My Life ▶ ■ </p>
       </div>
       <div id="in_out">
-        <input class="go_home" type="button" value="내 미니홈피 가기">
-        <input class="log_out" type="button" value="로그아웃">
+        <input class="go_home" type="button" value="내 미니홈피 가기" onclick="goMyHome()">
+        <input class="log_out" type="button" value="로그아웃" onclick="logout()">
       </div>
     </aside>
+    <script>
+      function goMyHome(){
+        alert("현재 지원되지 않는 기능입니다.")
+      }
+
+      function logout(){
+        alert("로그아웃 되었습니다.");
+      }
+
+      function clickButton() {
+        document.getElementById("text").style.display = "block";
+      }
+    </script>
   </body>
 </html>

@@ -194,9 +194,18 @@
         <p>&#128191; Coding is My Life ▶ ■ </p>
       </div>
       <div id="in_out">
-        <input class="go_home" type="button" value="내 미니홈피 가기">
-        <input class="log_out" type="button" value="로그아웃">
+        <input class="go_home" type="button" value="내 미니홈피 가기" onclick="goMyHome()">
+        <input class="log_out" type="button" value="로그아웃" onclick="logout()">
       </div>
     </aside>
+    <script>
+      function goMyHome(){
+        alert("현재 지원되지 않는 기능입니다.")
+      }
+
+      function logout(){
+        alert("로그아웃 되었습니다.");
+      }
+    </script>
   </body>
 </html>

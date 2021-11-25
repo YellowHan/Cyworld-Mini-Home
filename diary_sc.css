@@ -20,7 +20,7 @@
     border-color: gray; 
 }
 
-.date {
+.date_record {
     font-size: 13px;
     font-weight: 700;
     color: rgb(0, 133, 173);
@@ -187,13 +187,53 @@ span {
     margin: 5px;
 }
 
+#bottom_secret {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 10px 0px 10px;
+}
+
+#get_file {
+    display: block;
+    flex: 0.5;
+    margin-right: 100px;
+    background-color: rgb(107, 74, 43);
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+}
+
+#cancel {
+    display: none;
+    flex: 0.5;
+    margin-right: 100px;
+    background-color: rgb(107, 74, 43);
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+}
+
 .back_diary {
+    flex: 0.5;
+    margin-left: 100px;
     width: 150px;
-    background-color: skyblue;
+    background-color: rgb(107, 74, 43);
     font-size: 12px;
     border-style: none;
     border-radius: 5px;
     padding: 5px;
     text-align: center;
-    margin: auto;
+    
+}
+
+/* script */
+
+#secret_box {
+    display: none;
+}
+
+#secret_diary {
+    font-family: 'Single Day', cursive;
+    font-size: 15px;
+    margin: 10px;
 }
