@@ -3,3 +3,104 @@
     height: 420px;
     overflow: auto;
 }
+
+#contents_in {
+    padding: 5px;
+}
+
+.guest_box {
+    margin: 10px 10px 30px 10px;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(219, 219, 219);
+    font-size: 12px;
+    font-weight: 700;
+    border-style: none;
+    border-width: 1px;
+    border-color: gray;
+    border-radius: 3px;
+    padding: 6px 15px 6px 15px;
+}
+
+.guest_info {
+    flex: 0.6;
+}
+
+.title_side {
+    flex: 0.4;
+    text-align: right;
+}
+
+.color_blue {
+    color: blue;
+}
+
+.guest_home {
+    cursor: pointer;
+    color: yellow;
+}
+
+.guest_book {
+    display: flex;
+    flex-direction: row;
+}
+
+.bg_img_pureVanilla {
+    background-image: url("./img/bg_yellow.png");
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.bg_img_seafairy {
+    background-image: url("./img/bg_blue.png");
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.bg_img_pancakeCookie {
+    background-image: url("./img/bg_brown.png");
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.guest_img {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
+.msg_box {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+    font-size: 11px;
+}
+
+.secret_msg {
+    display: none;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.color_yellow {
+    color: yellow;
+}
+
+.color_tomato {
+    color: tomato;
+}
+
+.guest_msg {
+    margin-top: 30px;    
+}
+
+#empty {
+    display: none;
+    font-size: 15px;
+    text-align: center;
+    margin: 150px;
+}

@@ -59,7 +59,6 @@
                       </select>
                     </div>
                   </div>
-                  <div></div>
                 </div>
             </div>
             <div id="between"></div>
@@ -71,6 +70,93 @@
               <div id="main">
                 <div id="contents">
                   <!-- contents Start -->
+                  <div id="contents_in">
+                    <div id="empty">
+                      방명록 내용이 없습니다.<br>
+                      ㅠ.ㅠ
+                    </div>
+                    <div class="guest_box" id="pureVanilla_box">
+                      <div class="title" id="pureVanilla_info">
+                        <div class="guest_info">
+                        no. 001 퓨어바닐라 <a class="fas fa-home guest_home" href="https://www.cookierun-kingdom.com/ko/"></a> (2021.11.26 10:00)
+                        </div>
+                        <div class="title_side">
+                          <span id="secret_button1" onclick="change_secret('pureVanilla')">비밀로하기</span>
+                          <span id="btn_color_change1"> |
+                            <span onclick="guest_box_delete('pureVanilla')">삭제</span> |
+                            <span onclick="report()">신고</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="guest_book">
+                        <div class="bg_img_pureVanilla">
+                          <img class="guest_img" src="./img/pureVanilla.png" alt="퓨어바닐라">
+                        </div>
+                        <div class="msg_box">
+                          <div class="secret_msg"  id="open_msg1">
+                            &#128274<span class="color_tomato">비밀이야(이 글은 홈주인과 작성자만 볼 수 있어요)</span>
+                          </div>
+                          <div class="guest_msg">
+                            "진심은 언제나 통하기 마련이에요."
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="guest_box" id="seafairy_box">
+                      <div class="title" id="seafairy_info">
+                        <div class="guest_info">
+                        no. 002 바다요정 <a class="fas fa-home guest_home" onclick="guestHome('seafairy')"></a> (2021.11.27 11:11)
+                        </div>
+                        <div class="title_side">
+                          <a id="secret_button2" onclick="change_secret('seafairy')">비밀로하기</a>
+                          <span id="btn_color_change2"> |
+                            <span onclick="guest_box_delete('seafairy')">삭제</span> |
+                            <span onclick="report()">신고</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="guest_book">
+                        <div class="bg_img_seafairy">
+                          <img class="guest_img" src="./img/seafairy.png" alt="바다요정">
+                        </div>
+                        <div class="msg_box">
+                          <div class="secret_msg" id="open_msg2">
+                            &#128274<span class="color_tomato">비밀이야(이 글은 홈주인과 작성자만 볼 수 있어요)</span>
+                          </div>
+                          <div class="guest_msg">
+                            "당신은 따뜻한 마음을 가지고 계시군요."
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="guest_box" id="pancakeCookie_box">
+                      <div class="title" id="pancakeCookie_info">
+                        <div class="guest_info">
+                        no. 003 팬케이크맛 쿠키 <a class="fas fa-home guest_home" value="pancakeCookie" onclick="guestHome('pancakeCookie')"></a> (2021.11.28 11:11)
+                        </div>
+                        <div class="title_side">
+                          <span id="secret_button3" onclick="change_secret('pancakeCookie')">비밀로하기</span>
+                          <span id="btn_color_change3"> |
+                            <span onclick="guest_box_delete('pancakeCookie')">삭제</span> |
+                            <span onclick="report()">신고</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="guest_book">
+                        <div class="bg_img_pancakeCookie">
+                          <img class="guest_img" src="./img/pancakeCookie.png" alt="팬케이크맛 쿠키">
+                        </div>
+                        <div class="msg_box">
+                          <div class="secret_msg" id="open_msg3">
+                            &#128274<span class="color_tomato">비밀이야(이 글은 홈주인과 작성자만 볼 수 있어요)</span>
+                          </div>
+                          <div class="guest_msg">
+                            "나, 도토리젤리 안줄거야?"
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <!-- contents End -->
                 </div>
               </div>
@@ -132,11 +218,71 @@
     </aside>
     <script>
       function goMyHome(){
-        alert("현재 지원되지 않는 기능입니다.")
+        alert("현재 지원되지 않는 기능입니다.");
       }
 
       function logout(){
         alert("로그아웃 되었습니다.");
+      }
+
+      function guestHome(str){
+        if(str=="seafairy"){
+          alert("바다요정님은 미니홈피 개설을 하지 않았어요!!");
+        }
+        if(str=="pancakeCookie"){
+          alert("팬케이크맛 쿠키님은 미니홈피 개설을 하지 않았어요!!");
+        }
+      }
+
+      function change_secret(str){
+        if(str=="pureVanilla"){
+          document.getElementById("pureVanilla_info").style.backgroundColor = "rgb(151, 106, 63)";
+          document.getElementById("pureVanilla_info").style.color = "white";
+          document.getElementById("secret_button1").style.display = "none";
+          document.getElementById("btn_color_change1").style.color = "white";
+          document.getElementById("open_msg1").style.display = "block";
+        }
+        if(str=="seafairy"){
+          document.getElementById("seafairy_info").style.backgroundColor = "rgb(151, 106, 63)";
+          document.getElementById("seafairy_info").style.color = "white";
+          document.getElementById("secret_button2").style.display = "none";
+          document.getElementById("btn_color_change2").style.color = "white";
+          document.getElementById("open_msg2").style.display = "block";
+
+        }
+        if(str=="pancakeCookie"){
+          document.getElementById("pancakeCookie_info").style.backgroundColor = "rgb(151, 106, 63)";
+          document.getElementById("pancakeCookie_info").style.color = "white";
+          document.getElementById("secret_button3").style.display = "none";
+          document.getElementById("btn_color_change3").style.color = "white";
+          document.getElementById("open_msg3").style.display = "block";
+
+        }
+      }
+      
+      function guest_box_delete(str){
+        if(str=="pureVanilla"){
+          document.getElementById("pureVanilla_box").style.display = "none";
+          if(document.getElementById("seafairy_box").style.display == "none" && document.getElementById("pancakeCookie_box").style.display == "none"){
+            document.getElementById("empty").style.display = "block";
+          }
+        }
+        if(str=="seafairy"){
+          document.getElementById("seafairy_box").style.display = "none";
+          if(document.getElementById("pureVanilla_box").style.display == "none" && document.getElementById("pancakeCookie_box").style.display == "none"){
+            document.getElementById("empty").style.display = "block";
+          }
+        }
+        if(str=="pancakeCookie"){
+          document.getElementById("pancakeCookie_box").style.display = "none";
+          if(document.getElementById("seafairy_box").style.display == "none" && document.getElementById("pureVanilla_box").style.display == "none"){
+            document.getElementById("empty").style.display = "block";
+          }
+        }
+      }
+
+      function report() {
+        alert("신고되었습니다.");
       }
     </script>
   </body>

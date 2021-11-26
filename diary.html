@@ -108,7 +108,11 @@
                     </div>
                   </div>
                   <div id="contents_in">
-                    <div class="day">
+                    <div id="empty">
+                      다이어리 내용이 없습니다.<br>
+                      ㅠ.ㅠ
+                    </div>
+                    <div class="day" id="day_1">
                       <p class="date_record">2021.11.10 수</p>
                       <p class="text">
                         나는 개똥벌레~ 친구가 없네~<br>
@@ -136,7 +140,7 @@
                           <p><a href="#">책갈피</a> | <a href="#">스티커</a></p>
                         </div>
                         <div class="bottom_right">
-                          <p><a href="#">수정</a> | <a href="#">이동</a> | <a href="#">삭제</a> </p>
+                          <p><a href="#">수정</a> | <a href="#">이동</a> | <a onclick="delete_diary(day_1)">삭제</a> </p>
                         </div>
                       </div>
                       <div class="comment">
@@ -149,7 +153,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="day">
+                    <div class="day" id="day_2">
                       <p class="date_record">2021.11.17 화</p>
                       <p class="text">
                         모각코 6일차<br>
@@ -157,7 +161,6 @@
                         이렇게 재미있는 걸 이제 알았다니~~<br>
                         퍼즐맞추기 같은 CSS<br>
                         배치를 어떻게 하느냐에 따라 느낌이 확 달라진닷!<br>
-                        
                       </p>
                       <hr class="width_line">
                       <span class="gray_font_11">공개설정 : </span>
@@ -174,7 +177,7 @@
                           <p><a href="#">책갈피</a> | <a href="#">스티커</a></p>
                         </div>
                         <div class="bottom_right">
-                          <p><a href="#">수정</a> | <a href="#">이동</a> | <a href="#">삭제</a> </p>
+                          <p><a href="#">수정</a> | <a href="#">이동</a> | <a onclick="delete_diary(day_2)">삭제</a> </p>
                         </div>
                       </div>
                       <div class="comment">
@@ -187,7 +190,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="day">
+                    <div class="day"  id="day_3">
                       <p class="date_record">2021.11.24 화</p>
                       <p class="text">
                         하루 중 제일 즐거울 때는 언제?_?<br>
@@ -211,7 +214,7 @@
                           <p><a href="#">책갈피</a> | <a href="#">스티커</a></p>
                         </div>
                         <div class="bottom_right">
-                          <a href="#">수정</a> | <a href="#">이동</a> | <a href="#">삭제</a>
+                          <a href="#">수정</a> | <a href="#">이동</a> | <a onclick="delete_diary(day_3)">삭제</a>
                         </div>
                       </div>
                       <div class="comment">
@@ -299,6 +302,27 @@
 
       function clickButton() {
         document.getElementById("text").style.display = "block";
+      }
+
+      function delete_diary(str){
+        if(str==day_1){
+          document.getElementById("day_1").style.display = "none";
+          if(document.getElementById("day_2").style.display == "none" && document.getElementById("day_3").style.display == "none"){
+            document.getElementById("empty").style.display = "block";
+          }
+        }
+        if(str==day_2){
+          document.getElementById("day_2").style.display = "none";
+          if(document.getElementById("day_3").style.display == "none" && document.getElementById("day_1").style.display == "none"){
+            document.getElementById("empty").style.display = "block";
+          }
+        }
+        if(str==day_3){
+          document.getElementById("day_3").style.display = "none";
+          if(document.getElementById("day_1").style.display == "none" && document.getElementById("day_2").style.display == "none"){
+            document.getElementById("empty").style.display = "block";
+          }
+        }
       }
     </script>
   </body>
