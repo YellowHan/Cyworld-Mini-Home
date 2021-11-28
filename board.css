@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+
+#contents {
+    width: 500px;
+    height: 400px;
+    margin: 10px 0px 10px 10px;
+    overflow: auto;
+}
+
+#contents_in {
+    padding: 10px;
+}
+
+.board_title {
+    display: flex;
+    flex-direction: row;
+    border-style: solid none dotted none;
+    border-width: 1px;
+    border-color: gray;
+    font-size: 13px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.top_check_box {
+    margin: auto;
+}
+
+.check_box {
+    margin: auto;
+}
+
+.title {
+    flex: 1;
+    text-align: center;
+    margin: 5px;
+}
+
+.writer {
+    flex: 0.2;
+    text-align: center;
+    margin: 5px;
+}
+
+.date_created {
+    flex: 0.2;
+    text-align: center;
+    margin: 5px;
+}
+
+.views {
+    flex: 0.2;
+    text-align: center;
+    margin: 5px;
+}
+
+.contents_list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.text_info_box {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+}
+
+.text_title {
+    flex: 1;
+    text-align: left;
+    margin: 5px;
+}
+
+.text_number {
+    margin: 5px;
+}
+
+.bottom_line {
+    margin: 0px;
+    border-bottom-width: 0px;
+}
+
+.middle_box {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0px 5px 0px;
+}
+
+.middle_box_left {
+    flex: 1.1;
+}
+
+.button_size {
+    width: 15px;
+    height: 15px;
+    margin: auto;
+}
+
+.middle_box_right {
+    flex: 0.4;
+    float: right;
+}
+
+.right_button {
+    font-size: 11px;
+    padding: 0px 2px 0px 2px;
+    background-color: white;
+    border-radius: 3px;
+    border-width: 1px;
+    padding: 0px 2px 0px 2px;
+    border-color: gray;
+}
+
+.search_box {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 90px 10px 90px;
+}
+
+.search_select {
+    width: 80px;
+    margin: 5px;
+}
+
+.search_text {
+    margin: 5px;
+    font-size: 11px;
+}
+
+
+.search_button {
+    font-size: 11pxx;
+    padding: 0px 2px 0px 2px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 3px;
+    border-width: 1px;
+    padding: 0px 2px 0px 2px;
+    border-color: gray;
+}

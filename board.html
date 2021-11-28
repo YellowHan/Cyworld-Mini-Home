@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=1280, initial-scale=1.0">
-    <title>사진첩</title>
+    <title>게시판</title>
     <link rel="stylesheet" href="./layout.css" />
-    <link rel="stylesheet" href="./album.css" />
+    <link rel="stylesheet" href="./board.css" />
+    <script src="https://kit.fontawesome.com/98e052a43e.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="menu_bar">
@@ -73,71 +74,75 @@
                 <div id="contents">
                   <!-- contents Start -->
                   <div id="contents_in">
-                    <div>
-                      <p class="title">우리집 햄스터</p>
-                      <div class="info_row">
-                        <p class="info"><span class="blue">YellowHan</span> 2021.11.10 11:10 <span class="scrap">스크랩</span>:0</p>
-                        <p class="link_copy">주소복사</p>
+                    <div class="board_title">
+                      <input class="top_check_box" type="checkbox">
+                      <span class="title">제목</span>
+                      <span class="writer">작성자</span>
+                      <span class="date_created">작성일</span>
+                      <span class="views">조회</span>
+                    </div>
+                    <div class="contents_list">
+                      <div class="text_info_box">
+                        <input class="check_box" type="checkbox">
+                        <span class="text_number">5</span>
+                        <span class="text_title">내가 제일 좋아하는 쿠키는..</span>
+                        <span class="writer">Cookie</span>
+                        <span class="date_created">2021.11.29</span>
+                        <span class="views">910</span>
                       </div>
-                      <div>
-                        <img src="./img/2021.06.08.jpg">
-                        <p class="text">막둥이가 유치원에서 데려온 우리집 넷째:-)<br>
-                          오래오래 함께 행복하자♥
-                        </p>
-                        <div class="comment">
-                          <span>댓글</span>
-                          <div>
-                            <input class="input_text" type="text">
-                          </div>
-                          <div>
-                            <input class="confirm" type="button" value="확인">
-                          </div>
-                        </div>
+                      <div class="text_info_box">
+                        <input class="check_box" type="checkbox">
+                        <span class="text_number">4</span>
+                        <span class="text_title">제목</span>
+                        <span class="writer"></span>
+                        <span class="date_created">2021.11.28</span>
+                        <span class="views">78</span>
+                      </div>
+                      <div class="text_info_box">
+                        <input class="check_box" type="checkbox">
+                        <span class="text_number">3</span>
+                        <span class="text_title">제목</span>
+                        <span class="writer">작성자</span>
+                        <span class="date_created">2021.11.27</span>
+                        <span class="views">456</span>
+                      </div>
+                      <div class="text_info_box">
+                        <input class="check_box" type="checkbox">
+                        <span class="text_number">2</span>
+                        <span class="text_title">제목</span>
+                        <span class="writer">작성자</span>
+                        <span class="date_created">2021.11.26</span>
+                        <span class="views">23</span>
+                      </div>
+                      <div class="text_info_box">
+                        <input class="check_box" type="checkbox">
+                        <span class="text_number">1</span>
+                        <span class="text_title">제목</span>
+                        <span class="writer">작성자</span>
+                        <span class="date_created">2021.11.25</span>
+                        <span class="views">1</span>
                       </div>
                     </div>
-                    <div>
-                      <p class="title">여름방학</p>
-                      <div class="info_row">
-                        <p class="info"><span class="blue">YellowHan</span> 2021.11.10 11:10 <span class="scrap">스크랩</span>:0</p>
-                        <p class="link_copy">주소복사</p>
+                    <hr class="bottom_line">
+                    <div class="middle_box">
+                      <div class="middle_box_left">
+                        <img class="button_size" src="./img/up_red.png">
+                        <img class="button_size" src="./img/down_blue.png">
                       </div>
-                      <div>
-                        <img src="./img/2021.07.28.jpg">
-                        <p class="text">여름방학이 제일 좋아>_<<br>
-                          물놀이 할 수 있는 여름이 최고닷-!!
-                        </p>
-                        <div class="comment">
-                          <span>댓글</span>
-                          <div>
-                            <input class="input_text" type="text">
-                          </div>
-                          <div>
-                            <input class="confirm" type="button" value="확인">
-                          </div>
-                        </div>
+                      <div class="middle_box_right">
+                        <input class="right_button" type="button" value="이동" onclick="move()">
+                        <input class="right_button" type="button" value="삭제" onclick="text_delete()">
+                        <input class="right_button" type="button" value="✏️글쓰기" onclick="text_create">
                       </div>
                     </div>
-                    <div>
-                      <p class="title">우리집 귀요미들</p>
-                      <div class="info_row">
-                        <p class="info"><span class="blue">YellowHan</span> 2021.11.10 11:10 <span class="scrap">스크랩</span>:0</p>
-                        <p class="link_copy">주소복사</p>
-                      </div>
-                      <div>
-                        <img src="./img/2021.11.07.jpg">
-                        <p class="text">우리집 귀요미들♥_♥<br>
-                          셋이 한마음으로 점프~~
-                        </p>
-                        <div class="comment">
-                          <span>댓글</span>
-                          <div>
-                            <input class="input_text" type="text">
-                          </div>
-                          <div>
-                            <input class="confirm" type="button" value="확인">
-                          </div>
-                        </div>
-                      </div>
+                    <div class="search_box">
+                      <select class="search_select">
+                        <option>글제목</option>
+                        <option>작성자</option>
+                        <option>내용</option>
+                      </select>
+                      <input class="search_text" type="text">
+                      <input class="search_button" type="button" value="&#128270찾기">
                     </div>
                   </div>
                   <!-- contents End -->
@@ -206,6 +211,31 @@
 
       function logout(){
         alert("로그아웃 되었습니다.");
+      }
+
+      function clickButton() {
+        document.getElementById("text").style.display = "block";
+      }
+
+      function delete_diary(str){
+        if(str==day_1){
+          document.getElementById("day_1").style.display = "none";
+          if(document.getElementById("day_2").style.display == "none" && document.getElementById("day_3").style.display == "none"){
+            document.getElementById("empty").style.display = "block";
+          }
+        }
+        if(str==day_2){
+          document.getElementById("day_2").style.display = "none";
+          if(document.getElementById("day_3").style.display == "none" && document.getElementById("day_1").style.display == "none"){
+            document.getElementById("empty").style.display = "block";
+          }
+        }
+        if(str==day_3){
+          document.getElementById("day_3").style.display = "none";
+          if(document.getElementById("day_1").style.display == "none" && document.getElementById("day_2").style.display == "none"){
+            document.getElementById("empty").style.display = "block";
+          }
+        }
       }
     </script>
   </body>
