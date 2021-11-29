@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=1280, initial-scale=1.0">
-    <title>게시판</title>
+    <title>다이어리</title>
     <link rel="stylesheet" href="./layout.css" />
-    <link rel="stylesheet" href="./board.css" />
-    <script src="https://kit.fontawesome.com/98e052a43e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./board_writer.css" />
   </head>
   <body>
     <div id="menu_bar">
@@ -74,62 +73,10 @@
                 <div id="contents">
                   <!-- contents Start -->
                   <div id="contents_in">
-                    <div class="board_title">
-                      <span class="top_check_box">☑</span>
-                      <span class="title">제목</span>
-                      <span class="writer">작성자</span>
-                      <span class="date_created">작성일</span>
-                      <span class="views">조회</span>
-                    </div>
-                    <div id="empty">
-                      게시글이 없습니다.
-                    </div>
-                    <div class="contents_list">
-                      <div class="text_info_box" id="board_3">
-                        <input class="check_box" type="checkbox" id="check_3">
-                        <span class="text_number">3</span>
-                        <span class="text_title"><a href="/board_list/board_num3.html">토핑은 필요 없어</a></span>
-                        <span class="writer">Cookie</span>
-                        <span class="date_created">2021.11.27</span>
-                        <span class="views">456</span>
-                      </div>
-                      <div class="text_info_box" id="board_2">
-                        <input class="check_box" type="checkbox" id="check_2">
-                        <span class="text_number">2</span>
-                        <span class="text_title"><a href="/board_list/board_num2.html">낙하</a></span>
-                        <span class="writer">AKMU</span>
-                        <span class="date_created">2021.11.26</span>
-                        <span class="views">23</span>
-                      </div>
-                      <div class="text_info_box" id="board_1">
-                        <input class="check_box" type="checkbox" id="check_1">
-                        <span class="text_number">1</span>
-                        <span class="text_title"><a href="/board_list/board_num1.html">수고했어, 오늘도</a></span>
-                        <span class="writer">옥상달빛</span>
-                        <span class="date_created">2021.11.25</span>
-                        <span class="views">1</span>
-                      </div>
-                    </div>
-                    <hr class="bottom_line">
-                    <div class="middle_box">
-                      <div class="middle_box_left">
-                        <img class="button_size" src="./img/up_red.png">
-                        <img class="button_size" src="./img/down_blue.png">
-                      </div>
-                      <div class="middle_box_right">
-                        <input class="right_button" type="button" value="이동" onclick="move()">
-                        <input class="right_button" type="button" value="삭제" onclick="text_delete()">
-                        <input class="right_button" type="button" value="✏️글쓰기" onclick="location.href='./board_writer.html'">
-                      </div>
-                    </div>
-                    <div class="search_box">
-                      <select class="search_select">
-                        <option>글제목</option>
-                        <option>작성자</option>
-                      </select>
-                      <input class="search_text" type="text">
-                      <input class="search_button" type="button" value="&#128270찾기">
-                    </div>
+                    <input class="title" type="text" placeholder="제목">
+                    <hr class="middle_line">
+                    <textarea class="text" placeholder="내용"></textarea>
+                    <input class="save" type="button" value="저장">
                   </div>
                   <!-- contents End -->
                 </div>
@@ -190,6 +137,7 @@
         <input class="log_out" type="button" value="로그아웃" onclick="logout()">
       </div>
     </aside>
+    <!--스크립트 시작-->
     <script>
       function goMyHome(){
         alert("현재 지원되지 않는 기능입니다.")
@@ -198,28 +146,6 @@
       function logout(){
         alert("로그아웃 되었습니다.");
       }
-
-      function move(){
-        alert("이동 가능한 폴더가 없습니다.")
-      }
-
-      function text_delete(){
-        if(document.getElementById("check_1").checked){
-          document.getElementById("board_1").style.display = "none";
-        }
-        if(document.getElementById("check_2").checked){
-          document.getElementById("board_2").style.display = "none";
-        }
-        if(document.getElementById("check_3").checked){
-          document.getElementById("board_3").style.display = "none";
-        }
-        if(document.getElementById("board_1").style.display == "none" &&
-        document.getElementById("board_2").style.display == "none" &&
-        document.getElementById("board_3").style.display == "none"){
-          document.getElementById("empty").style.display = "block";
-        }
-      }
-      
     </script>
   </body>
 </html>

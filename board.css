@@ -89,17 +89,19 @@
 
 .middle_box_left {
     flex: 1.1;
+    padding-top: 2px;
 }
 
 .button_size {
-    width: 15px;
-    height: 15px;
-    margin: auto;
+    width: 12px;
+    height: 12px;
 }
 
 .middle_box_right {
     flex: 0.4;
     float: right;
+    text-align: right;
+    padding-bottom: 4px;
 }
 
 .right_button {
@@ -138,4 +140,11 @@
     border-width: 1px;
     padding: 0px 2px 0px 2px;
     border-color: gray;
+}
+
+#empty {
+    display: none;
+    text-align: center;
+    font-size: 11px;
+    margin: 10px;
 }
