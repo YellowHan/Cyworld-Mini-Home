@@ -1,0 +1,146 @@
+#contents {
+    width: 500px;
+    height: 400px;
+    margin: 10px 0px 10px 10px;
+    overflow: auto;
+}
+
+#contents_in {
+    padding: 10px;
+}
+
+.title {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.top_link_copy {
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 2px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.info {
+    border-style: solid none dotted none;
+    border-width: 1px;
+    border-color: gray;
+    font-size: 11px;
+    margin: 5px 0px 5px 0px;
+    padding: 4px 0px 4px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.name {
+    flex: 1;
+}
+
+.date {
+    flex: 0.3;
+    text-align: right;
+}
+
+.views {
+    flex: 0.2;
+    text-align: center;
+}
+
+.color_blue {
+    color: blue;
+}
+
+.color_orange {
+    color: rgb(255, 123, 0);
+}
+
+.text {
+    font-size: 11px;
+    margin: 15px 0px 15px 0px;
+    text-align: center;
+}
+
+.public_set_dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: 11px;
+    color: gray;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.public_set_dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 2px;
+    text-align: center;
+}
+
+.public_set_dropdown:hover .public_set_dropdown_content {
+    display: block;
+}
+
+.gray_font_11 {
+    color: gray;
+    font-size: 11px;
+}
+
+.bottom_line_solid {
+    border-width: 1px;
+    border-bottom-width: 0px;
+    border-style: solid;
+    border-color: gray;
+    margin: 5px 0px 5px 0px;
+}
+
+.bottom_line_dotted {
+    border-width: 1px;
+    border-bottom-width: 0px;
+    border-style: dotted;
+    border-color: gray;
+    margin: 0px
+}
+
+.right_align {
+    text-align: right;
+    font-size: 11px;
+    color: gray;
+    cursor: pointer;
+}
+
+.comment {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    background-color: rgb(235, 235, 235);
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    margin: 5px 0px 5px 0px;
+}
+
+.input_name {
+    flex: 0.9;
+    margin: auto;
+}
+
+.input_text {
+    flex: 1;
+    width: 320px;
+    margin: auto;
+    padding: 2px 1px 1px 1px;
+}
+
+.confirm {
+    flex: 0.1;
+    margin-left: 10px;
+    padding: 0px 3px 0px 3px;
+}
+
+.youtube {
+    margin: 15px 0px 15px 0px;
+}
