@@ -214,8 +214,8 @@
           document.getElementById("board_3").style.display = "none";
         }
         if(document.getElementById("board_1").style.display == "none" &&
-        document.getElementById("board_2").style.display == "none" &&
-        document.getElementById("board_3").style.display == "none"){
+          document.getElementById("board_2").style.display == "none" &&
+          document.getElementById("board_3").style.display == "none"){
           document.getElementById("empty").style.display = "block";
         }
       }
@@ -234,18 +234,21 @@
             document.getElementById("board_1").style.display = "flex";
             document.getElementById("board_2").style.display = "none";
             document.getElementById("board_3").style.display = "none";
+            document.getElementById("empty").style.display = "none";
           }
 
           if(board_title_2.includes(document.getElementById("msg").value)){
             document.getElementById("board_1").style.display = "none";
             document.getElementById("board_2").style.display = "flex";
             document.getElementById("board_3").style.display = "none";
+            document.getElementById("empty").style.display = "none";
           }
 
           if(board_title_3.includes(document.getElementById("msg").value)){
             document.getElementById("board_1").style.display = "none";
             document.getElementById("board_2").style.display = "none";
             document.getElementById("board_3").style.display = "flex";
+            document.getElementById("empty").style.display = "none";
           }
         }
 
@@ -254,18 +257,21 @@
             document.getElementById("board_1").style.display = "flex";
             document.getElementById("board_2").style.display = "none";
             document.getElementById("board_3").style.display = "none";
+            document.getElementById("empty").style.display = "none";
           }
 
           if(board_writer_2.toUpperCase().includes(document.getElementById("msg").value.toUpperCase())){
             document.getElementById("board_1").style.display = "none";
             document.getElementById("board_2").style.display = "flex";
             document.getElementById("board_3").style.display = "none";
+            document.getElementById("empty").style.display = "none";
           }
 
           if(board_writer_3.toUpperCase().includes(document.getElementById("msg").value.toUpperCase())){
             document.getElementById("board_1").style.display = "none";
             document.getElementById("board_2").style.display = "none";
             document.getElementById("board_3").style.display = "flex";
+            document.getElementById("empty").style.display = "none";
           }
         }        
       }
