@@ -88,24 +88,24 @@
                       <div class="text_info_box" id="board_3">
                         <input class="check_box" type="checkbox" id="check_3">
                         <span class="text_number">3</span>
-                        <span class="text_title"><a href="./board_list/board_num3.html">토핑은 필요 없어</a></span>
-                        <span class="writer">Cookie</span>
+                        <span class="text_title"><a href="./board_list/board_num3.html" id="contents_name3">토핑은 필요 없어</a></span>
+                        <span class="writer" id="writer_name3">Cookie</span>
                         <span class="date_created">2021.11.27</span>
                         <span class="views">456</span>
                       </div>
                       <div class="text_info_box" id="board_2">
                         <input class="check_box" type="checkbox" id="check_2">
                         <span class="text_number">2</span>
-                        <span class="text_title"><a href="./board_list/board_num2.html">낙하</a></span>
-                        <span class="writer">AKMU</span>
+                        <span class="text_title"><a href="./board_list/board_num2.html" id="contents_name2">낙하</a></span>
+                        <span class="writer" id="writer_name2">AKMU</span>
                         <span class="date_created">2021.11.26</span>
                         <span class="views">23</span>
                       </div>
                       <div class="text_info_box" id="board_1">
                         <input class="check_box" type="checkbox" id="check_1">
                         <span class="text_number">1</span>
-                        <span class="text_title"><a href="./board_list/board_num1.html">수고했어, 오늘도</a></span>
-                        <span class="writer">옥상달빛</span>
+                        <span class="text_title"><a href="./board_list/board_num1.html" id="contents_name1">수고했어, 오늘도</a></span>
+                        <span class="writer" id="writer_name1">옥상달빛</span>
                         <span class="date_created">2021.11.25</span>
                         <span class="views">1</span>
                       </div>
@@ -123,12 +123,12 @@
                       </div>
                     </div>
                     <div class="search_box">
-                      <select class="search_select">
-                        <option>글제목</option>
-                        <option>작성자</option>
+                      <select id="search_select">
+                        <option id="contents_title">글제목</option>
+                        <option id="contents_writer">작성자</option>
                       </select>
-                      <input class="search_text" type="text">
-                      <input class="search_button" type="button" value="&#128270찾기">
+                      <input class="search_text" type="text" id="msg">
+                      <input class="search_button" type="button" value="&#128270찾기" onclick="search()">
                     </div>
                   </div>
                   <!-- contents End -->
@@ -218,6 +218,56 @@
         document.getElementById("board_3").style.display == "none"){
           document.getElementById("empty").style.display = "block";
         }
+      }
+
+      function search(){
+        var board_title_1 = document.getElementById("contents_name1").innerText;
+        var board_title_2 = document.getElementById("contents_name2").innerText;
+        var board_title_3 = document.getElementById("contents_name3").innerText;
+
+        var board_writer_1 = document.getElementById("writer_name1").innerText;
+        var board_writer_2 = document.getElementById("writer_name2").innerText;
+        var board_writer_3 = document.getElementById("writer_name3").innerText;
+
+        if(document.querySelector('#search_select > option:checked').value == document.getElementById("contents_title").innerText) {
+          if(board_title_1.includes(document.getElementById("msg").value)){
+            document.getElementById("board_1").style.display = "flex";
+            document.getElementById("board_2").style.display = "none";
+            document.getElementById("board_3").style.display = "none";
+          }
+
+          if(board_title_2.includes(document.getElementById("msg").value)){
+            document.getElementById("board_1").style.display = "none";
+            document.getElementById("board_2").style.display = "flex";
+            document.getElementById("board_3").style.display = "none";
+          }
+
+          if(board_title_3.includes(document.getElementById("msg").value)){
+            document.getElementById("board_1").style.display = "none";
+            document.getElementById("board_2").style.display = "none";
+            document.getElementById("board_3").style.display = "flex";
+          }
+        }
+
+        if(document.querySelector('#search_select > option:checked').value == document.getElementById("contents_writer").innerText) {
+          if(board_writer_1.toUpperCase().includes(document.getElementById("msg").value.toUpperCase())){
+            document.getElementById("board_1").style.display = "flex";
+            document.getElementById("board_2").style.display = "none";
+            document.getElementById("board_3").style.display = "none";
+          }
+
+          if(board_writer_2.toUpperCase().includes(document.getElementById("msg").value.toUpperCase())){
+            document.getElementById("board_1").style.display = "none";
+            document.getElementById("board_2").style.display = "flex";
+            document.getElementById("board_3").style.display = "none";
+          }
+
+          if(board_writer_3.toUpperCase().includes(document.getElementById("msg").value.toUpperCase())){
+            document.getElementById("board_1").style.display = "none";
+            document.getElementById("board_2").style.display = "none";
+            document.getElementById("board_3").style.display = "flex";
+          }
+        }        
       }
       
     </script>
