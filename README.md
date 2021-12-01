@@ -3,7 +3,7 @@
 [모각코+/HTML+CSS] 11월 과정  
 cyworld 미니 홈피 만들기  
   
-===== 구현된 기능 =====<br>
+===== 구현된 기능 =====  
 테스트 페이지 : https://yellowhan.github.io/mini_home/  
   
 + 레이아웃  
