@@ -1,7 +1,15 @@
 body {
     margin: 0px;
-    height: 0px;
     background-image: url('./img/cookieVillage.jpg');
+}
+
+.bg_layout {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1100px;
+    height: 700px;
 }
 
 p {
@@ -11,6 +19,7 @@ p {
 #section {
     float: left;
     width: 900px;
+    margin: auto;
 }
 
 #bookcover {
