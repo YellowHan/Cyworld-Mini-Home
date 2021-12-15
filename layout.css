@@ -311,7 +311,7 @@ p {
 
 /* Menu_bar */
 #menu_bar {
-    position: relative;
+    position: fixed;
     top: 130px;
     left: 804px;
 }
