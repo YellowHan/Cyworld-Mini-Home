@@ -1,4 +1,8 @@
-# mini_home
+# mini_home  
+  
+![화면 캡처 2022-01-01 124211](https://user-images.githubusercontent.com/89592727/147843465-2201e204-fd62-41b8-a1f1-b092996042a8.png)  
+  
+  
 코뮤니티 : https://cafe.naver.com/codeuniv  
 [모각코+/HTML+CSS] 11월 과정  
 cyworld 미니 홈피 만들기  
